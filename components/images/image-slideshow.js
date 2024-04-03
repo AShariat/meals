@@ -29,7 +29,7 @@ export default function ImageSlideshow() {
       setCurrentImageIndex((prevIndex) =>
         prevIndex < images.length - 1 ? prevIndex + 1 : 0
       );
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
